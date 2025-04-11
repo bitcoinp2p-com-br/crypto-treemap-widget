@@ -45,8 +45,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 2;
 }
-
-/* Tamanho de blocos por rankagem */
 .crypto-size-1 {
     grid-column: span 2;
     grid-row: span 3;
@@ -71,23 +69,24 @@
     grid-column: span 1;
     grid-row: span 1;
 }
-
 .crypto-ticker-large {
-    font-size: 3.5rem;
+    font-size: calc(1rem + 0.5vw);
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 .crypto-ticker-medium {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+}
+.crypto-ticker-small {
 }
 
-.crypto-ticker-small {
-    font-size: 1.2rem;
-    font-weight: bold;
+.crypto-ticker-mini {
+}
+
+.crypto-price-large {
+    font-size: 1.5rem;
     margin-bottom: 5px;
+}
+.crypto-ticker-small {
 }
 
 .crypto-ticker-mini {
@@ -268,10 +267,7 @@
         grid-column: span 1;
         grid-row: span 2;
     }
-    
-    .crypto-ticker-large {
-        font-size: 2.5rem;
-    }
+
 }
 
 @media (max-width: 576px) {

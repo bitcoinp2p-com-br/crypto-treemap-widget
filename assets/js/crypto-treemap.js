@@ -154,13 +154,7 @@ jQuery(document).ready(function($) {
                 var symbolElement = container.append('div')
                     .attr('class', 'crypto-treemap-symbol')
                     .text(d.data.name);
-
-                // Ajustar o tamanho da fonte com base no tamanho do elemento
-                if (isLarge) {
-                    symbolElement.style('font-size', getFontSize(areaSize, 24));
-                } else if (isMedium) {
-                    symbolElement.style('font-size', getFontSize(areaSize, 18));
-                }
+                symbolElement.style('font-size', getFontSize(areaSize, 20));
 
                 // Preço (visível em todos menos os muito pequenos)
                 if (!isSmall || isLarge) {
